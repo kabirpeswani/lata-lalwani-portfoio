@@ -5,7 +5,7 @@ import AchievementsSection from '@/components/sections/achievements';
 import PerformancesSection from '@/components/sections/performances';
 import MusicSection from '@/components/sections/music';
 import ContactSection from '@/components/sections/contact';
-import { Separator } from '@/components/ui/separator';
+import FadeIn from '@/components/animations/fade-in';
 
 const DevanagariPhrase = () => (
   <div className="text-center py-12 md:py-16 text-2xl md:text-3xl font-headline text-accent/80 tracking-widest bg-black/20">
@@ -17,14 +17,28 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <DevanagariPhrase />
+      <FadeIn>
+        <DevanagariPhrase />
+      </FadeIn>
       <div className="space-y-24 md:space-y-32 pb-24 md:pb-32">
-        <AboutSection />
-        <JourneySection />
-        <AchievementsSection />
-        <PerformancesSection />
-        <MusicSection />
-        <ContactSection />
+        <FadeIn>
+          <AboutSection />
+        </FadeIn>
+        <FadeIn>
+          <JourneySection />
+        </FadeIn>
+        <FadeIn>
+          <AchievementsSection />
+        </FadeIn>
+        <FadeIn>
+          <PerformancesSection />
+        </FadeIn>
+        <FadeIn>
+          <MusicSection />
+        </FadeIn>
+        <FadeIn>
+          <ContactSection />
+        </FadeIn>
       </div>
     </>
   );

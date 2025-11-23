@@ -2,6 +2,7 @@ import Image from 'next/image';
 import placeholderData from '@/lib/placeholder-images.json';
 import { Button } from '../ui/button';
 import Link from 'next/link';
+import { cn } from '@/lib/utils';
 
 const HeroSection = () => {
   const heroImage = placeholderData.placeholderImages.find(p => p.id === 'hero-bg');
@@ -29,10 +30,10 @@ const HeroSection = () => {
           Indian Singer • Performer • 10 Years of Musical Journey
         </p>
         <div className="mt-8 flex gap-4">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/80 text-primary-foreground">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/80 text-primary-foreground animate-glow">
                 <Link href="#music">Listen Now</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-accent text-accent hover:bg-accent/10 hover:text-accent">
+            <Button asChild size="lg" variant="outline" className="border-accent text-accent hover:bg-accent/10 hover:text-accent animate-glow-accent">
                 <Link href="#contact">Contact Me</Link>
             </Button>
         </div>

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import placeholderData from '@/lib/placeholder-images.json';
 import { Button } from '../ui/button';
 import Link from 'next/link';
-import { cn } from '@/lib/utils';
+import WavyText from '../animations/wavy-text';
 
 const HeroSection = () => {
   const heroImage = placeholderData.placeholderImages.find(p => p.id === 'hero-bg');
@@ -23,9 +23,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/40" />
 
       <div className="relative z-10 flex flex-col items-center px-4">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline font-bold text-white shadow-lg animate-pulse animation-delay-500">
-          Lata Lalwani
-        </h1>
+        <WavyText text="Lata Lalwani" />
         <p className="mt-4 text-lg md:text-xl lg:text-2xl font-body text-accent italic">
           Indian Singer • Performer • 10 Years of Musical Journey
         </p>

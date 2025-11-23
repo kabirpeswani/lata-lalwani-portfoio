@@ -4,6 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import FloatingNotes from '@/components/animations/floating-notes';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
+import FloatingSargamNotes from '@/components/animations/floating-sargam-notes';
 
 export const metadata: Metadata = {
   title: 'Lata Lalwani Music',
@@ -24,6 +25,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <FloatingNotes />
+        <FloatingSargamNotes />
         <Header />
         <main className="relative z-10">
           {children}

@@ -18,7 +18,7 @@ const contactInfo = [
   {
     icon: Youtube,
     text: 'Lata Lalwani on YouTube',
-    href: 'https://www.youtube.com/watch?v=b2aXv2Qbp44&list=RDb2aXv2Qbp44&start_radio=1',
+    href: 'https://www.youtube.com/@lata_lalwani',
     label: 'Lata Lalwani on YouTube'
   }
 ];

@@ -72,6 +72,36 @@
   }
 }
 
+@keyframes floatAndRotate {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.sargam-note {
+  position: absolute;
+  top: 0;
+  color: hsl(var(--accent) / 0.3);
+  font-size: 2.5rem;
+  animation: floatAndRotate linear infinite;
+  user-select: none;
+  pointer-events: none;
+  font-family: 'Alegreya', serif;
+  font-weight: 700;
+}
+
+
 @keyframes floatUp {
   0% {
     transform: translateY(0);
